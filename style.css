@@ -1,44 +1,220 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Inter, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
-}
-
-body{
+body {
     display: flex;
 }
-
 .image_decs_main_block {
     width: 40%;
     height: 100vh;
-    background-color: rgb(42, 31, 148);
+    background-color: #373737;
     position: relative;
+    
 }
-
-.wraper{
+.wrapper{
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: 0.6;
+    opacity: 0.85;
     position: absolute;
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 0 40px;
-    background-color: #373737;
+    align-items: center;
+    background-color: #1565D8;
 }
 
-.img {
+.text_block{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+     padding: 0 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.reg{
+    width: 100%;
+    text-align: end;
+    padding: 70px 50px 0 0 ;
+}
+
+.reg span {
+    color: rgba(0, 0, 0, 0.356);
+}
+
+.reg span a:focus {
+    outline: none;
+    border: 1px solid blue;
+}
+
+.text {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-align: start;
+}
+
+.top_logo {
     position: absolute;
+    top: 25px;
+    left: 30px;
+    color: white;
+}
+
+.top_logo_img {
+    width: 43.6px;
+    height: 30px;
+}
+
+.logo_vergul {
+    position: absolute;
+    width: 28;
+    height: 117;
+    opacity: 1;
+    top: 130px;
+    left: 82px;
+}
+
+.main_block_join_us {
+    width: 60%;
+}
+
+.autor {
+    position: absolute;
+    top: 470px;
+    left: 80px;
+}
+
+.autor p {
+    color: white;
+    display: inline;;
+}
+.autor img {
+    display: inline;
+    height: 16px;
+    width: 16px;
+}
+
+.vector {
+    position: absolute;
+    top: 530px;
+    right: 135px;
+}
+
+.join_us {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0 0 60px;
+    width: 70%;
+    gap: 20px;
+}
+
+.join_us p {
+    font-size: 18px;
+}
+
+.join_us h2 {
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.join_us button {
+    width: 100%;
+    display: block;
+    border: none;
+}
+
+.join_us button:hover {
+    border: 1px solid blue;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+.join_us button:focus {
+    outline: none;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+
+.join_us button{
+    margin: 15px 0 0 0;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.btn {
+    display: flex;
+}
+
+.logo_first_btn {
+    position: relative;
+}
+
+.logo_first_btn img:nth-of-type(1) {
+    width: 52px;
+    height: 52px;
+    z-index: 1;
+    margin: 20px;
+}
+
+.logo_first_btn img:nth-of-type(2) {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index:2 ;
+    top: 36px;
+    left: 36px;
+}
+
+.word_first_btn{
+    margin: 20px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.word_first_btn p:nth-of-type(1) {
+    font-size: 16px;
+}
+
+.word_first_btn p:nth-of-type(2) {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.356);
+}
+
+.logo_arrow_right img {
+    width: 20px;
+    height: 20px;
+}
+
+.logo_arrow_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.btn_second {
+    display: flex;
 }
