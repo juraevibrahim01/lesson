@@ -10,6 +10,7 @@
 
 body {
     display: flex;
+    height: 100%;
 }
 .image_decs_main_block {
     width: 40%;
@@ -95,6 +96,7 @@ body {
 
 .main_block_join_us {
     width: 60%;
+    height: 100vh;
 }
 
 .autor {
@@ -217,4 +219,255 @@ body {
 
 .btn_second {
     display: flex;
+}
+
+
+.head_form {
+    display: flex;
+    width: 100%;
+    padding: 40px 30px 0 30px;
+    justify-content:space-between;
+}
+
+.head_form div:nth-of-type(1) {
+    display: flex;
+}
+
+.head_form_img {
+    width: 20px;
+    height: 20px;
+}
+
+.head_form_img ~ p {
+    color: #8692A6;
+}
+
+.right_head_form p:nth-of-type(1) {
+    color: #BDBDBD;
+    text-align: end;
+    font-size: 14px;
+}
+
+.right_head_form p:nth-of-type(2) {
+    text-align: start;
+    font-size: 16px;
+    color: #8692A6;
+}
+
+.form_first {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.form_first h2 {
+    color: black;
+    font-size: 20px;
+    text-align: start;
+}
+
+.form_first p {
+    color: #8692A6;
+    font-size: 14px;
+    text-align: start;
+    line-height: 1.4;
+}
+
+
+.form_first input, select{
+    height: 40px;
+    padding-left: 20px; /* сдвинет placeholder вправо */
+    border-radius: 10px;
+    border: 2px solid rgba(68, 56, 56, 0.425);
+}
+
+.form_first input:focus::placeholder {
+  color: #000;
+}
+
+.form_first input::placeholder {
+    color: #8692A6;
+}
+
+
+.form_first label {
+    text-align: start;
+    font-size: 14px;
+    color: #535964;
+}
+
+.form_first form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_checkbox {
+    display: flex !important;
+    flex-direction: row !important;
+    margin-bottom: 10px;
+}
+
+.form_checkbox input {
+    height: auto;
+}
+
+.form {
+    width: 100%;
+    align-items: center;
+    height: 80%;
+    padding: 40px 0 0 95px;
+}
+
+.border-red {
+    border: 1px solid red;
+}
+
+.form_first div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0 0 0;
+}
+
+form button {
+    height: 40px;
+}
+
+.hror {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 20px !important;
+    align-items: center;
+
+}
+
+.hror hr {
+  flex: 1;          /* занимает всё доступное место по ширине */
+  height: 1px;      /* тонкая линия */
+  border: none;
+  background: #000; /* цвет линии */
+}
+
+.btn_logo_google {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    border: none;
+    background-color: white;
+    box-shadow: 0px 4px 10px 0px #0000003b;
+}
+
+.btn_logo_google img {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 20px;
+}
+
+.btn_logo_google span {
+    text-align: center;
+}
+
+.form_checkbox label {
+    color: #3f4146;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: rgba(73, 76, 82, 0.103); /* синий, но полупрозрачный */
+  border-radius: 1px; /* слегка скруглённые края */
+  box-shadow: #373737;
+}
+
+.hror hr {
+  border: none;
+  height: 1px;
+  background: rgba(73, 76, 82, 0.199); /* синий, но полупрозрачный */
+  border-radius: 1px; /* слегка скруглённые края */
+  box-shadow: #373737;
+}
+
+.register_acount {
+    background-color: #1565D8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.form_first input:focus {
+    outline: none;
+    border: 2px solid #1565D8;
+}
+
+.password {
+    position: relative;
+}
+
+.password span {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    font-size: 14px;
+}
+
+.country_resedent {
+    margin: 0 0 20px 0;
+}
+
+.info_security {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    padding: 10px 0 0 0;
+}
+
+.info_security p {
+    font-size: 12px;
+}
+
+.info_security img {
+    width: 14px;
+    height: 14px;
+}
+
+
+.number-fon {
+    position: relative;
+}
+
+.code_country_choose {
+    display: flex !important;
+    flex-direction: row !important;
+    position: absolute;
+    left: 10px;
+    top: 35px;
+}
+
+.code_country_choose span:nth-of-type(2) {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.number-fon input {
+    padding-left: 120px;
+}
+
+#sign_in {
+    display: none;
+}
+
+#individual {
+    display: none;
+}
+
+#business {
+    display: none;
 }

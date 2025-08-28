@@ -38,13 +38,15 @@
     </div>
 
     <div class="main_block_join_us">
+      <!-- main -->
+      <div class="main" id="main">
         <div class="reg">
-            <span>Already have an account? <a href="#">Sign In</a></span>
+            <span>Already have an account? <a id="click_sign_in">Sign In</a></span>
         </div>
         <div class="join_us">
             <h2>Join Us!</h2>
             <p>To begin this journey, tell us what type of account you’d be opening.</p>
-            <button>
+            <button type="button" id="click_individual">
               <div class="btn">
                 <div class="logo_first_btn">
                   <img src="./assets/Polygon 1.png" alt="Полигон">
@@ -60,7 +62,7 @@
               </div>
             </button>
             <button>
-              <div class="btn">
+              <div class="btn" id="click_business">
                 <div class="logo_first_btn">
                   <img src="./assets/Polygon 2.png" alt="Полигон">
                   <img src="./assets/briefcase.png" alt="Портфель">
@@ -70,11 +72,148 @@
                   <p>Own or belong to a company, this is for you.</p>
                 </div>
                 <div class="logo_arrow_right">
-                </div>
               </div>
             </button>
         </div>
+      </div>
+      <!-- End main -->
+
+      <!-- Sign in -->
+      <div class="sign in" id="sign_in">
+        <div class="head_form">
+            <div role="button" id="firs_click_button">
+              <img class="head_form_img" src="./assets/arrow_back_ios_24px.png" alt="Стрелка в лево" width="20px" height="20px">
+              <p>Back</p>
+            </div>
+            <div class="right_head_form">
+              <p>STEP 01/03</p>
+              <p>Personal Info.</p> 
+            </div>
+        </div>
+        <div class="form">
+          <div class="form_first">
+            <div>
+              <h2>Register Individual Account!</h2>
+              <p>For the purpose of industry regulation, your details are required.</p>
+              <hr>
+            </div>
+              <form action="#" method="post">
+                <label for="name">Your Fullname*</label>
+                <input type="text" id="name" placeholder="Invictus Innocent">
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" placeholder="Enter email address">
+                <div class="password">
+                  <label for="password">Create Password*</label>
+                  <input type="password" id="password" placeholder="Enter Password">
+                  <span>Show</span>
+                </div>  
+                <div class="form_checkbox">
+                  <input type="checkbox" name="checkbox" id="checkbox">
+                  <label for="checkbox">I agree to terms & conditions</label>
+                </div>
+                <button class="register_acount" type="submit"><span>Register Acount</span></button>
+                <div class="hror">
+                  <hr>
+                  <span>Or</span>
+                  <hr>
+                </div>
+                <button class="btn_logo_google" type="button">
+                  <img src="./assets/flat-color-icons_google.png" alt="Значок Гугл браузера">
+                  <span>Register with Google</span>
+                </button>
+              </form>
+          </div>
+        </div>
+      </div>
+      <!-- End Sign in -->
+
+      <!-- Individual -->
+      <div class="individual" id="individual">
+        <div class="head_form">
+            <div role="button" id="second_click_button">
+              <img class="head_form_img" src="./assets/arrow_back_ios_24px.png" alt="Стрелка в лево" width="20px" height="20px">
+              <p>Back</p>
+            </div>
+            <div class="right_head_form">
+              <p>STEP 02/03</p>
+              <p>Personal Info.</p> 
+            </div>
+        </div>
+        <div class="form">
+          <div class="form_first">
+            <div>
+              <h2>Complete Your Profile!</h2>
+              <p>For the purpose of industry regulation, your details are required.</p>
+              <hr>
+            </div>
+              <form action="#" method="post">
+                <div class="number-fon">
+                  <label for="number-fon">Phone Number*</label>
+                  <input type="number" id="number-fon" placeholder="Enter your tel-number">
+                
+                  <div class="code_country_choose">
+                    <span><img width="24px" height="18px" src="./assets/Frame.png" alt="Флаг страны"></span>
+                    <span><p>+234</p><img width="20px" height="20px" src="./assets/carret - down.png" alt="Стрелка вниз"></span>
+                  </div>
+                </div>
+
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" placeholder="Enter email address">
+                <label for="country">Country of residence</label>
+                <select class="country_resedent" name="country_resedent" id="country">
+                  <option value="" selected hidden>Please select</option>
+                  <option value="+7">🇷🇺 +7</option>
+                  <option value="+992">🇹🇯 +992</option>
+                  <option value="+998">🇺🇿 +998</option>
+                  <option value="+1">🇺🇸 +1</option>
+                </select>
+                <button class="register_acount" type="submit"><span>Save & Continue</span></button>
+                <div class="info_security">
+                  <img width="14px" height="14px" src="./assets/lock_24px.png" alt="Значок замка">
+                  <p>You’ve successfully</p>
+                </div>
+              </form>
+          </div>
+        </div>
+      </div>
+      <!-- End Individual -->
+
+      <!-- Business -->
+      <div class="business" id="business">
+        <div class="head_form">
+            <div role="button" id="third_click_button">
+              <img class="head_form_img" src="./assets/arrow_back_ios_24px.png" alt="Стрелка в лево" width="20px" height="20px">
+              <p>Back</p>
+            </div>
+            <div class="right_head_form">
+              <p>STEP 03/03</p>
+              <p>Personal Info.</p> 
+            </div>
+        </div>
+        <div class="form">
+          <div class="form_first">
+            <div>
+              <h2>Complete Your Profile!</h2>
+              <p>For the purpose of industry regulation, your details are required.</p>
+              <hr>
+            </div>
+              <form action="#" method="post">
+            
+                <label for="number-fon">Bank verification number (BVN)</label>
+                <input type="number" id="number-fon" placeholder="Enter your number">
+
+                <button class="register_acount" type="submit"><span>Save & Continue</span></button>
+                <div class="info_security">
+                  <img width="14px" height="14px" src="./assets/lock_24px.png" alt="Значок замка">
+                  <p>You’ve successfully</p>
+                </div>
+              </form>
+          </div>
+        </div>
+      </div>
+       <!-- End Business -->
     </div>
+    <script src="./main.js"></script>
 </body>
 
 </html>
