@@ -362,6 +362,7 @@ form button {
     border: none;
     background-color: white;
     box-shadow: 0px 4px 10px 0px #0000003b;
+    cursor: pointer;
 }
 
 .btn_logo_google img {
@@ -400,6 +401,7 @@ hr {
     color: white;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .form_first input:focus {
@@ -470,4 +472,23 @@ hr {
 
 #business {
     display: none;
+}
+
+#click_sign_in {
+    cursor: pointer;
+    text-decoration: solid underline blue;
+    color: blue;
+    
+}
+
+#first_click_button, #second_click_button, #third_click_button {
+    cursor: pointer;
+}
+
+#checkbox, #checkbox ~ label {
+    cursor: pointer;
+}
+
+#country {
+    cursor: pointer;
 }
